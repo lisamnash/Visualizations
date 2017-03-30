@@ -58,11 +58,8 @@ def plot_on_frame(frame, time, pts, avg, plotting_mag=1, save_name='frame.png', 
         if color_by == 'amplitude':
             colors.append(np.sqrt((plotting_mag * x_for_t[j]) ** 2 + (plotting_mag * y_for_t[j]) ** 2))
 
-        if j != 0 and j != 1:
-            patch.append(circ)
-            bol.append(True)
-        else:
-            bol.append(False)
+        bol.append(True)
+
 
     if color_by == 'phase':
         colors = (np.arctan2(y_for_t, x_for_t)) % (2 * np.pi)
