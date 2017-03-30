@@ -2,6 +2,8 @@
 
 This repository contains code to make data from the gyroscope experiments into movies with circles that are colored either by phase or amplitude. 
 
+    Currently only works with cine files.  Can also be used to just plot circles representing amplitudes with no background of the actual experimental video. 
+
 ## Overview of functions
 
 ### `get_frame_points_and_time`: 
@@ -26,7 +28,7 @@ This function gets the gyroscopes'
 * xavg - Float array of size Number of gyros.  Average x positions of gyroscopes over interval
 * yavg - Float array of size Number of gyros.  Average y positions of gyroscopes over interval
 
-### `plot_on_frame`: 
+### `plot_on_frame`:
 Plots the data from the file on the movie frame and saves.
 
 *parameters*:
@@ -42,7 +44,7 @@ Plots the data from the file on the movie frame and saves.
 *returns*
 * NONE
 
-### `adjust_frame`: 
+### `adjust_frame`:
 Adjusts the brightness of the frame as prescribed by maximum and minimum values
 
 *parameters*:
