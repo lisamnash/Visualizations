@@ -60,7 +60,6 @@ def plot_on_frame(frame, time, pts, avg, plotting_mag=1, save_name='frame.png', 
 
         bol.append(True)
 
-
     if color_by == 'phase':
         colors = (np.arctan2(y_for_t, x_for_t)) % (2 * np.pi)
         p = PatchCollection(patch, cmap=cmap, alpha=0.6)
@@ -93,14 +92,9 @@ def plot_on_frame(frame, time, pts, avg, plotting_mag=1, save_name='frame.png', 
               family='sans-serif')
     plt.xlim(0, 580)
     plt.ylim(580, 0)
-    p3 = Rectangle((500, 120), 40, -80, fill=False, ec='w', lw=2)
-    p_ax.add_patch(p3)
     plt.savefig(save_name)
 
-    p3.remove()
-
     abc2.remove()
-
 
     plt.close()
 
