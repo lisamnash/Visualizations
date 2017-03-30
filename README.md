@@ -2,7 +2,7 @@
 
 This repository contains code to make data from the gyroscope experiments into movies with circles that are colored either by phase or amplitude. 
 
-    Currently only works with cine files.  Can also be used to just plot circles representing amplitudes with no background of the actual experimental video. 
+Currently only works with cine files.  Can also be used to just plot circles representing amplitudes with no background of the actual experimental video. 
 
 ## Overview of functions
 
